@@ -1,0 +1,24 @@
+.ep-table-wrap {
+  margin-top: 20px;
+
+  border: 1px solid #e9e9e9;
+  .ep-table-thead {
+    line-height: 50px;
+
+    height: 50px;
+    .ep-table-th-title {
+      display: inline-block;
+
+      padding-left: 20px;
+    }
+    .ep-table-th-handle {
+      float: right;
+      margin-right: 20px;
+    }
+  }
+  .ep-table-page {
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+  }
+}

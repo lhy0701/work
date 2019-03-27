@@ -1,0 +1,34 @@
+.downloadWrap {
+  background: url('./images/download-bg.png');
+  background-size: 100% 107%;
+}
+.downloadContainer {
+  display: flex;
+
+  width: 1100px;
+  margin: auto;
+
+  justify-content: space-around;
+  h1 {
+    text-align: center;
+  }
+  .download-block {
+    padding: 50px;
+    dl {
+      text-align: center;
+      dd {
+        width: 180px;
+        height: 180px;
+
+        text-align: center;
+      }
+      dt {
+        margin-top: 20px;
+      }
+    }
+    img {
+      width: 180px;
+      height: 154px;
+    }
+  }
+}

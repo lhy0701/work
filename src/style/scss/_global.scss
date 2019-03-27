@@ -1,0 +1,111 @@
+@charset 'utf-8';
+////
+/// 通用全局样式
+///
+/// @group common
+/// @author wx
+////
+// atomic classes (原子类)
+.oh {
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+// clear float (清浮动)
+.clear {
+  font-size: 0;
+
+  clear: both;
+  overflow: hidden;
+
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+  &::after {
+    display: block;
+    clear: both;
+
+    height: 0;
+
+    content: '\0020';
+  }
+}
+
+.line-clamp {
+  display: -webkit-box;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  word-break: break-word;
+
+  -webkit-box-orient: vertical;
+  &.one {
+    -webkit-line-clamp: 1;
+  }
+  &.two {
+    -webkit-line-clamp: 2;
+  }
+}
+
+.culture {
+  margin-top: -5px;
+  padding: 150px 0;
+  img {
+    width: 100%;
+  }
+  h1 {
+    margin: auto;
+
+    text-align: center;
+  }
+  .content {
+    font-family: inherit;
+
+    width: 750px;
+    margin: auto;
+    margin-top: 12px;
+
+    color: #666;
+  }
+}
+.ant-carousel .slick-dots li button,
+.ant-carousel .slick-dots li.slick-active button {
+  background: #00a0ea !important;
+}

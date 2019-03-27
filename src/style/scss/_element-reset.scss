@@ -1,0 +1,35 @@
+.el-header {
+  padding: 0 !important;
+}
+
+.el-main {
+  color: #333;
+}
+
+.el-table {
+  width: 100%;
+}
+
+.my-menu {
+  &:not(.el-menu--collapse) {
+    min-width: 180px;
+  }
+  .el-menu-item-group__title {
+    padding: 0 !important;
+  }
+  .el-menu-item {
+    min-width: 110px !important;
+    // padding: 0 !important;
+    // text-align: center;
+
+    // border-bottom: 1px solid #efefef !important;
+  }
+  .el-menu-item:last-child {
+    border-bottom: 1px solid #efefef !important;
+  }
+  .el-submenu__title {
+    // padding-left: 12px !important;
+    // text-align: center;
+    border-bottom: 1px solid #efefef !important;
+  }
+}

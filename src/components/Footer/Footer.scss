@@ -1,0 +1,32 @@
+.Cbfooter {
+  background: #f5f5f5;
+  span {
+    color: #000;
+  }
+  .official-container {
+    .official-title {
+      text-align: center;
+      h1 {
+        font-size: 24px;
+      }
+    }
+    .official-main {
+      display: flex;
+
+      width: 960px;
+      margin: 0 auto;
+      margin-top: 21px;
+
+      justify-content: space-between;
+    }
+  }
+  .footer-bottom-in {
+    line-height: 40px;
+
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    text-align: center;
+  }
+}
