@@ -1,14 +1,3 @@
-
-## Available Scripts
-
-### `npm start`
-
-### `npm test`
-
-### `npm run build`
-
-## 项目目录
-
 |-- officialWebsite
     |-- .gitignore
     |-- package.json
