@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <style>
+    html,body{
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .loading{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .5);
+      display: none;
+    }
+    .lds-ring {
+      display: inline-block;
+      position: relative;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .lds-ring div {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      width: .8rem;
+      height: .8rem;
+      margin: 6px;
+      border: 6px solid #fff;
+      border-radius: 50%;
+      animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      border-color: #fff transparent transparent transparent;
+    }
+    .lds-ring div:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+    .lds-ring div:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+    .lds-ring div:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+    @keyframes lds-ring {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .search-result{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5 )
+    }
+    .search-result div{
+      position: absolute;
+      width: 80%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      height: 2.5rem;
+    }
+    .search-result button{
+      width: 80%;
+      height: 1rem;
+      font-size: .5rem;
+      background: #5957ff;
+      color: #ffffff;
+      margin:  0rem auto .5rem auto;
+      display: block;
+      outline: none;
+      border-radius: .1rem;
+      border: none;
+    }
+    .wranning{
+      color: #ff0000;
+      display: inline-block;
+      margin-left: .3rem;
+      font-size: .25rem;
+    }
+  </style>
+  <!-- <script src="../../assets/js/resetRem.js"></script> -->
+  <title>支付订单</title>
+</head>
+
+<body ontouchstart="">
+  <div class="wrapper">
+    <header>
+      <div class="icon"></div>
+      <div>支付订单</div>
+    </header>
+    <div>
+      <div class="product-card">
+        <ul>
+          <li class="list-item">
+            <div class="describe-title">购买软件</div>
+            <div class="describe-product">车兄弟云商卖家版</div>
+          </li>
+          <li class="list-item">
+            <div class="describe-title">使用期限</div>
+            <div class="describe-product">365天</div>
+          </li>
+          <li class="list-item">
+            <div class="describe-title">应付金额</div>
+            <div class="describe-product sum">￥3000.00元</div>
+          </li>
+        </ul>
+      </div>
+      <div class="block"></div>
+      <!-- <span class="wranning">* 支付宝，部分机型需手动打开账单进行支付</span> -->
+      <div class="product-card">
+        <div class="list-title">请选择支付方式</div>
+        <div class="list-main">
+          <ul class="payway">
+            <!-- <li>
+              <i class="icon-WeChat"></i>
+              <input type="radio" id="WeChat" name="product" checked />
+              <label onclick="" for="WeChat">微信</label>
+            </li> -->
+            <li>
+              <i class="icon-Alipay"></i>
+              <input type="radio" id="Alipay" name="product" checked />
+              <label onclick="" for="Alipay">支付宝</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block"></div>
+      <div class="product-submit">
+        <button class="next">
+          确认支付
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="loading">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="search-result" style="display:none"> <!-- style="display:none" -->
+    <div>
+      <button class="have-paid">我已支付</button>
+      <button class="close">取消支付</button>
+    </div>
+  </div>
+</body>
+
+</html>

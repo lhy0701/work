@@ -1,0 +1,45 @@
+.product-banner {
+  padding: .2rem;
+
+  background: #fff;
+  img {
+    width: 100%;
+  }
+}
+.list-main {
+  font-size: .28rem;
+
+  ul {
+    padding-left: .2rem;
+    li:first-child {
+      margin-top: .1rem;
+    }
+    li {
+      line-height: .8rem;
+
+      border-bottom: 1px solid rgba(235, 235, 235, 1);
+      label {
+        display: inline-block;
+
+        width: 100%;
+      }
+    }
+    li:last-child {
+      border: none;
+    }
+  }
+  .list-desc {
+    box-sizing: border-box;
+    padding: .2rem;
+    li:first-child {
+      padding-left: 0rem;
+    }
+    li {
+      line-height: .7rem;
+
+      padding-left: .2rem;
+
+      border-bottom: none;
+    }
+  }
+}

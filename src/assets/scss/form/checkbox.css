@@ -1,0 +1,90 @@
+input[type='radio'] + label::before {
+  font-size: 18px;
+  line-height: 1;
+
+  display: inline-block;
+
+  width: .32rem;
+  height: .32rem;
+  margin-right: .2rem;
+
+  content: '\a0'; /*不换行空格*/
+  vertical-align: middle;
+  text-indent: .15em;
+
+  border: 2px solid #ebebeb;
+  border-radius: 50%;
+}
+input[type='radio']:checked + label::before {
+  border: 2px solid rgba(235, 235, 235, 1);
+  border-radius: 50%;
+  background: url('../../img/icon/radio.png');
+  background-size: 100%;
+}
+input[type='radio'] {
+  position: absolute;
+
+  clip: rect(0, 0, 0, 0);
+
+  width: 0;
+  height: 0;
+}
+li {
+  position: relative;
+}
+
+li label::before {
+  font-size: 18px;
+  line-height: 1;
+
+  position: absolute;
+  top: 0;
+  right: 70px;
+  bottom: 0;
+
+  display: inline-block;
+  display: inline-block;
+
+  width: 100%;
+  width: .32rem;
+  height: .32rem;
+  margin: auto;
+  /* margin-right: .2rem; */
+
+  content: '\a0';
+  vertical-align: middle;
+  text-indent: .15em;
+
+  border: 2px solid #ebebeb;
+  border-radius: 50%;
+}
+
+.icon-WeChat,
+.icon-Alipay {
+  position: absolute;
+  top: .16rem;
+
+  width: .5rem;
+  height: .5rem;
+}
+.icon-WeChat {
+  background: url('../../img/icon/icon_Wechat.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.icon-Alipay {
+  background: url('../../img/icon/icon_Alipay.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.payway label {
+  display: inline-block;
+
+  width: 100%;
+  padding-left: .7rem;
+}
+.block {
+  height: .32rem;
+}
