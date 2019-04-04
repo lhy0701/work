@@ -1,0 +1,188 @@
+////
+/// 项目通用scss
+///
+/// @group common
+/// @author wangxin
+////
+@charset 'utf-8';
+.w {
+  min-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.h {
+  min-width: 1280px;
+}
+.filter-box,
+.table-box {
+  margin-top: 20px;
+
+  border: 1px solid #e9e9e9;
+}
+
+.filter-box {
+  .title {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 50px;
+
+    padding-left: 20px;
+
+    color: #333;
+    border-bottom: 1px solid #e9e9e9;
+    background: #f9f9f9;
+  }
+  .filter-content {
+    position: relative;
+
+    overflow: hidden;
+    .filter-form {
+      margin-right: 180px;
+      padding-top: 30px;
+      .el-select .el-input__inner {
+        padding-right: 16px !important;
+      }
+    }
+    .filter-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 180px;
+      padding-top: 30px;
+    }
+  }
+}
+
+.table-box {
+  overflow: hidden;
+
+  padding: 0 20px;
+  .title {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 60px;
+
+    overflow: hidden;
+
+    color: #333;
+  }
+}
+
+.first-title {
+  line-height: 40px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding-left: 20px;
+
+  border-bottom: 1px solid #d6d6d6;
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 2px;
+    height: 20px;
+
+    content: ' ';
+
+    background: #8bb8e2;
+  }
+  .back {
+    float: right;
+
+    margin-right: 20px;
+  }
+}
+.my-pagination {
+  float: right;
+
+  margin: 20px 0;
+}
+// 开店管理
+.fl-wrap {
+  .fl-header {
+    font-weight: bold;
+    line-height: 50px;
+
+    margin-top: 10px;
+    padding-left: 20px;
+
+    color: #333;
+    border: 1px solid #e9e9e9;
+    background: #f9f9f9;
+  }
+  .fl-body {
+    padding: 20px;
+
+    border: 1px solid #e9e9e9;
+    border-top: none;
+    .fl-btn {
+      display: inline-block;
+      float: right;
+    }
+    .fl-item {
+      display: inline-block;
+
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      text-align: left;
+      label {
+        display: inline-block;
+
+        width: 85px;
+      }
+      .fl-item-18 {
+        width: 180px;
+      }
+      .fl-item-15 {
+        width: 150px;
+      }
+    }
+  }
+  .fl-body:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '';
+  }
+}
+.pub-block {
+  margin: 10px;
+}
+// 列表table容器样式
+.ep-table-wrap {
+  margin-top: 20px;
+
+  border: 1px solid #e9e9e9;
+  .ep-table-thead {
+    line-height: 50px;
+
+    height: 50px;
+    .ep-table-th-title {
+      display: inline-block;
+
+      padding-left: 20px;
+    }
+    .ep-table-th-handle {
+      float: right;
+
+      margin-right: 20px;
+    }
+  }
+  .ep-table-page {
+    float: right;
+
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+}
+
